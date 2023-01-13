@@ -4,13 +4,13 @@
     "description": "",
     "author": "Dean Grey",
     "license": "ISC",
-    "homepage": "https://github.com/linxio-dean-grey/linxio-api#readme",
+    "homepage": "https://github.com/deanjgrey/wretch-proxy#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/linxio-dean-grey/linxio-api.git"
+        "url": "git+https://github.com/deanjgrey/wretch-proxy.git"
     },
     "bugs": {
-        "url": "https://github.com/linxio-dean-grey/linxio-api/issues"
+        "url": "https://github.com/deanjgrey/wretch-proxy/issues"
     },
     "type": "module",
     "engines": {
