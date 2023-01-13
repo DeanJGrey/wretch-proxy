@@ -1,11 +1,32 @@
 {
-  "name": "@deanjgrey/wretch-proxy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Dean Grey",
-  "license": "ISC"
+    "name": "@deanjgrey/wretch-proxy",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Dean Grey",
+    "license": "ISC",
+    "homepage": "https://github.com/linxio-dean-grey/linxio-api#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/linxio-dean-grey/linxio-api.git"
+    },
+    "bugs": {
+        "url": "https://github.com/linxio-dean-grey/linxio-api/issues"
+    },
+    "type": "module",
+    "engines": {
+        "node": ">=19.0.0"
+    },
+    "files": [
+        "./index.js",
+        "./index.d.ts"
+    ],
+    "main": "./index.js",
+    "scripts": {
+        "build": "tsc",
+        "buildAndPublish": "tsc && npm publish",
+        "dev": "ts-node --esm src/test.ts"
+    },
+    "dependencies": {
+        "wretch": "^2.3.2"
+    }
 }

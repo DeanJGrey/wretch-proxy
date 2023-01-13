@@ -1,0 +1,24 @@
+{
+    "compilerOptions":
+    {
+        "outDir": "./",
+        "target": "ESNext",
+        "lib": ["ESNext", "DOM"],
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "resolveJsonModule": true,
+        "moduleSuffixes": [""],
+        "allowJs": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "paths":
+        {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["./src/index.ts"],
+    "exclude": ["./node_modules"]
+}
