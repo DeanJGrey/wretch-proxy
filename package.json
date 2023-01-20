@@ -1,6 +1,6 @@
 {
     "name": "@deanjgrey/wretch-proxy",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "",
     "author": "Dean Grey",
     "license": "ISC",
@@ -29,8 +29,7 @@
     "dependencies": {
         "wretch": "^2.3.2"
     },
-    "devDependencies":
-    {
+    "devDependencies": {
         "@types/node": "^18.11.15",
         "@types/qs": "^6.9.7",
         "@typescript-eslint/eslint-plugin": "^5.44.0",
