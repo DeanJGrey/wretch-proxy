@@ -13,35 +13,31 @@
         "url": "https://github.com/deanjgrey/wretch-proxy/issues"
     },
     "type": "module",
-    "engines": {
-        "node": ">=19.0.0"
-    },
+    "main": "./index.js",
     "files": [
         "./index.js",
         "./index.d.ts"
     ],
-    "main": "./index.js",
     "scripts": {
-        "build": "tsc",
-        "buildAndPublish": "tsc && npm publish",
-        "dev": "ts-node --esm src/test.ts"
+        "dev": "tsc && node dist/test/test.js",
+        "pub": "tsc && copy package.json dist && cd dist && npm publish && del package.json"
     },
-    "dependencies": {
-        "wretch": "^2.3.2"
-    },
-    "devDependencies": {
-        "@types/node": "^18.11.15",
-        "@types/qs": "^6.9.7",
-        "@typescript-eslint/eslint-plugin": "^5.44.0",
-        "eslint": "^8.28.0",
-        "eslint-config-standard-with-typescript": "^23.0.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-n": "^15.5.1",
-        "eslint-plugin-promise": "^6.1.1",
-        "nodemon": "^2.0.20",
-        "ts-node": "^10.9.1"
+    "engines": {
+        "node": ">=19.0.0"
     },
     "volta": {
         "node": "19.4.0"
+    },
+    "dependencies": {
+        "wretch": "^2.4.1"
+    },
+    "devDependencies": {
+        "@types/node": "^18.13.0",
+        "@typescript-eslint/eslint-plugin": "^5.52.0",
+        "eslint": "^8.34.0",
+        "eslint-config-standard-with-typescript": "^34.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^15.6.1",
+        "eslint-plugin-promise": "^6.1.1"
     }
 }

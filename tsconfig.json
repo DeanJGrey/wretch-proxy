@@ -1,11 +1,11 @@
 {
     "compilerOptions":
     {
-        "outDir": "./",
+        "outDir": "./dist",
         "target": "ESNext",
         "lib": ["ESNext", "DOM"],
         "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        "moduleResolution": "nodenext",
         "resolveJsonModule": true,
         "moduleSuffixes": [""],
         "allowJs": true,
