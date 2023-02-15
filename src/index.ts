@@ -1,6 +1,6 @@
 import {FetchLike, WretchOptions} from "wretch"
 
-export default function proxy ({proxyURL, proxyOptions}: {proxyURL: string, proxyOptions: Omit <RequestInit, "body" | "method">})
+export default function proxy ({url: proxyURL, options: proxyOptions}: {url: string, options: Omit <RequestInit, "body" | "method">})
 {
     return (next: FetchLike) =>
     {
